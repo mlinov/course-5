@@ -1,0 +1,50 @@
+background-color (white): 
+background: #FFF;
+------------------------
+background color grey:
+background: #F6F6F6;
+------------------------
+nav ul-li:
+
+color: #070707;
+font-size: 18px;
+font-family: Open Sans;
+font-weight: 400;
+------------------------
+h1:
+
+color: #070707;
+font-size: 47px;
+font-family: Open Sans;
+font-weight: 700;
+------------------------
+h2:
+
+color: #070707;
+font-size: 34px;
+font-family: Open Sans;
+font-weight: 700;
+------------------------
+p:
+
+color: #070707;
+font-size: 18px;
+font-family: Open Sans;
+------------------------
+skills p:
+
+color: #828282;
+font-size: 14px;
+font-family: Gilroy-Bold;
+------------------------
+portfolio a:
+
+color: var(--black, #070707);
+font-size: 18px;
+font-family: Open Sans;
+------------------------
+footer like me p:
+
+color: #828282;
+font-size: 14px;
+font-family: Open Sans;
