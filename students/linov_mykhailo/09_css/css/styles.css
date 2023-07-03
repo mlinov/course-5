@@ -1,0 +1,70 @@
+body {
+    font-family: "Open Sans", Helvetica, sans-serif;
+    font-size: 18px;
+    color: #070707;
+}
+
+.greyback {
+    background: #F6F6F6;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul.nav a,
+p>a {
+    text-decoration: none;
+}
+
+a.navlink {
+    font-family: "Open Sans", Helvetica, sans-serif;
+    font-size: 18px;
+    color: #828282;
+}
+
+a.black {
+    font-family: "Open Sans", Helvetica, sans-serif;
+    font-size: 18px;
+    color: #070707;
+}
+
+.novik {
+    width: 943px;
+    height: 387px;
+    background: url(../images/jpg/denis_novik.jpeg)
+}
+
+h1,
+h2 {
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 47px;
+}
+
+h2 {
+    font-size: 34px;
+}
+
+.skill {
+    color: #828282;
+    font-size: 14px;
+    font-family: "Gilroy-Bold", Helvetica, sans-serif;
+}
+
+button {
+    background-color: #070707;
+    color: #FFF;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+    height: 38px;
+    width: 166px;
+    border-radius: 20px;
+}
+
+.contact {
+    color: #828282;
+    font-size: 14px;
+}
