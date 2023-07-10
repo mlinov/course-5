@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #070707;
+    text-align: center;
+}
+
+.greyback {
+    background: #F6F6F6;
+}
+
+#home,
+#novik,
+#about_me,
+#skills,
+#portfolio,
+#contacts {
+    margin: 0 auto;
+}
+
+#home {
+    width: 940px;
+    height: 75px;
+    border-bottom: 1px solid #828282;
+}
+
+.nav>li {
+    box-sizing: border-box;
+    display: inline-block;
+    margin-top: 23px;
+    padding-left: 41px;
+}
+
+.nav>li:first-child {
+    padding-left: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a.navlink {
+    color: #828282;
+}
+
+a.black {
+    color: #070707;
+    text-decoration: underline;
+}
+
+#novik {
+    height: 623px;
+}
+
+.h1 {
+    margin-right: 665px;
+}
+
+.novik__photo {
+    width: 943px;
+    height: 387px;
+    background: url(../images/jpg/denis_novik.jpeg);
+    margin: 0 auto;
+}
+
+#about_me {
+    height: 517px;
+}
+
+.about__me__text {
+    width: 480px;
+    display: inline-block;
+}
+
+#skills {
+    height: 580px;
+}
+
+.box {
+    padding-top: 79px;
+    margin: 0 auto;
+}
+
+.skills__box {
+    display: inline-block;
+    width: 166px;
+    padding-right: 90px;
+}
+
+.skills__box:last-child {
+    padding-right: 0;
+}
+
+.star {
+    height: 20px;
+    width: 26px;
+    padding-right: 5px;
+}
+
+#portfolio {
+    height: 2239px;
+}
+
+h1,
+h2 {
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 47px;
+    padding-top: 34px;
+    padding-bottom: 39px;
+}
+
+h2 {
+    font-size: 34px;
+    padding-top: 100px;
+}
+
+.portfolio__image,
+.portfolio__image_two {
+    padding-bottom: 15px;
+}
+
+.portfolio__image {
+    padding-top: 68px;
+}
+
+.portfolio__image_two {
+    padding-top: 99px;
+}
+
+.skill {
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    padding: 24px 0 60px;
+}
+
+#contacts {
+    height: 671px;
+}
+
+.contacts__h2 {
+    padding-bottom: 21px;
+}
+
+.contacts__button {
+    padding-top: 70px;
+    padding-bottom: 38px;
+}
+
+button {
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    background-color: #070707;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+    height: 42px;
+    width: 180px;
+    border-radius: 20px;
+}
+
+.contacts__icons>li {
+    display: inline-block;
+    padding-right: 61px;
+}
+
+.contacts__icons>li:last-child {
+    padding-right: 0;
+}
+
+.contact {
+    padding-top: 44px;
+}
+
+.skill,
+.contact {
+    color: #828282;
+    font-size: 14px;
+}

@@ -1,0 +1,240 @@
+@font-face {
+    font-display: swap;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./fonts/montserrat-v25-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    src: url('./fonts/montserrat-v25-latin-500.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    src: url('./fonts/montserrat-v25-latin-600.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: url('./fonts/montserrat-v25-latin-700.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./fonts/poppins-v20-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    src: url('./fonts/poppins-v20-latin-700.woff2') format('woff2');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    color: #544837;
+    line-height: 28px;
+}
+
+.container {
+    padding: 17px 120px;
+    height: 80px;
+    width: 1440px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.logo__image {
+    float: left;
+    width: 200px;
+    height: 32px;
+    padding: 7px 0;
+}
+
+.header_buttons {
+    float: right;
+    width: 250px;
+    height: 46px;
+}
+
+.signbutton {
+    width: 110px;
+    display: inline-block;
+}
+
+li {
+    list-style-type: none;
+}
+
+nav {
+    text-align: center;
+    width: calc(100% - 200px - 252px);
+}
+
+ul.nav {
+    height: 28px;
+    padding: 9px 0;
+}
+
+.nav>li {
+    display: inline-block;
+    padding-right: 20px;
+}
+
+.nav>li:last-child {
+    padding-right: 0;
+}
+
+.alink {
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+    color: #2F281E;
+    font-size: 16px;
+}
+
+.orange {
+    color: #F90;
+}
+
+.sign_in,
+.sign_up {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    height: 46px;
+    width: 110px;
+    padding: 13px 25px;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.sign_in {
+    border: 1px solid #BCD0E5;
+    background-color: #FFFFFF;
+    color: #2F281E;
+}
+
+.sign_up {
+    border: 1px solid #F90;
+    background-color: #F90;
+    color: #FFFFFF;
+    margin-left: 32px;
+}
+
+.main {
+    height: 500px;
+}
+
+/* footer */
+
+.footcont {
+    width: 1200px;
+    height: 209px;
+    margin: 0 auto;
+    padding: 70px 0;
+}
+
+.footone,
+.foottwo {
+    float: left;
+    height: 209px;
+    padding-right: 125px;
+}
+
+
+
+.footone {
+    width: 200px;
+}
+
+.foottwo {
+    width: 135px;
+}
+
+.footthree {
+    float: left;
+    width: 340px;
+}
+
+h3 {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    color: #2F281E;
+}
+
+.quicklinks__list,
+.footer-nav {
+    padding-top: 30px;
+}
+
+.quicklinks__list>li,
+.footer-nav>li {
+    padding-top: 15px;
+}
+
+.quicklinks__list>li:first-child,
+.footer-nav>li:first-child {
+    padding-top: 0px;
+}
+
+.footer-nav a {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    line-height: 26px;
+    color: #544837;
+}
+
+.phonenum {
+    width: 320px;
+    height: 50px;
+    padding: 0 10px;
+    border-radius: 4px;
+    border: 1px solid #BCD0E5;
+    margin: 25px 0;
+}
+
+::placeholder {
+    color: #BCD0E5;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.sign_up_now {
+    background-color: #F90;
+    color: #FFFFFF;
+    height: 50px;
+    width: 180px;
+    border: none;
+    border-radius: 4px;
+    font-weight: 700;
+    padding: 13px 25px;
+    font-family: 'Poppins', 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+}
