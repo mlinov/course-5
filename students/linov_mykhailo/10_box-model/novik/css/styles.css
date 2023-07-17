@@ -15,12 +15,7 @@ body {
     background: #F6F6F6;
 }
 
-#home,
-#novik,
-#about_me,
-#skills,
-#portfolio,
-#contacts {
+.container {
     margin: 0 auto;
 }
 
@@ -53,52 +48,65 @@ a.navlink {
     color: #828282;
 }
 
+a.navlink:hover {
+    color: #070707;
+}
+
 a.black {
     color: #070707;
     text-decoration: underline;
+    display: block;
 }
 
 #novik {
     height: 623px;
 }
 
-.h1 {
+h1 {
     margin-right: 665px;
-}
-
-.novik__photo {
-    width: 943px;
-    height: 387px;
-    background: url(../images/jpg/denis_novik.jpeg);
-    margin: 0 auto;
 }
 
 #about_me {
     height: 517px;
 }
 
-.about__me__text {
+.about-me__text {
     width: 480px;
     display: inline-block;
+}
+
+.text__bm {
+    margin-bottom: 50px;
+}
+
+.h2__bm {
+    margin-bottom: 23px;
 }
 
 #skills {
     height: 580px;
 }
 
-.box {
-    padding-top: 79px;
-    margin: 0 auto;
-}
-
 .skills__box {
     display: inline-block;
     width: 166px;
     padding-right: 90px;
+    padding-top: 79px;
 }
 
 .skills__box:last-child {
     padding-right: 0;
+    padding-top: 0;
+}
+
+.skill {
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    padding: 17px 40px 54px;
+    width: 87px;
+}
+
+.figma-text {
+    padding-bottom: 70px;
 }
 
 .star {
@@ -138,11 +146,6 @@ h2 {
 
 .portfolio__image_two {
     padding-top: 99px;
-}
-
-.skill {
-    font-family: "Open Sans", Arial, Helvetica, sans-serif;
-    padding: 24px 0 60px;
 }
 
 #contacts {

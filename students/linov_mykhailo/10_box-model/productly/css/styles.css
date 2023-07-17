@@ -78,17 +78,13 @@ body {
     height: 46px;
 }
 
-.signbutton {
-    width: 110px;
-    display: inline-block;
-}
-
 li {
     list-style-type: none;
 }
 
 nav {
     text-align: center;
+    display: inline-block;
     width: calc(100% - 200px - 252px);
 }
 
@@ -116,7 +112,7 @@ a {
     font-size: 16px;
 }
 
-.orange {
+.navlink:hover {
     color: #F90;
 }
 
@@ -127,7 +123,6 @@ a {
     font-weight: 600;
     height: 46px;
     width: 110px;
-    padding: 13px 25px;
     border-radius: 4px;
     box-sizing: border-box;
 }
@@ -136,13 +131,14 @@ a {
     border: 1px solid #BCD0E5;
     background-color: #FFFFFF;
     color: #2F281E;
+    margin-right: 12px;
 }
 
 .sign_up {
     border: 1px solid #F90;
     background-color: #F90;
     color: #FFFFFF;
-    margin-left: 32px;
+    margin-left: 12px;
 }
 
 .main {
