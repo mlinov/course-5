@@ -1,0 +1,209 @@
+@font-face {
+    font-display: swap;
+    font-family: 'Tourney';
+    font-style: normal;
+    font-weight: 600;
+    src: url('fonts/tourney-v11-latin-600.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Staatliches';
+    font-style: normal;
+    font-weight: 400;
+    src: url('fonts/staatliches-v11-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Francois One';
+    font-style: normal;
+    font-weight: 400;
+    src: url('fonts/francois-one-v21-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('fonts/pt-sans-v17-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'PT Sans';
+    font-style: italic;
+    font-weight: 400;
+    src: url('fonts/pt-sans-v17-latin-italic.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: url('fonts/pt-sans-v17-latin-700.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Farro';
+    font-style: normal;
+    font-weight: 300;
+    src: url('fonts/farro-v14-latin-300.woff2') format('woff2');
+}
+
+body {
+    font-family: "PT Sans", Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    line-height: 48px;
+    color: #000;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    z-index: 1;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1200px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+
+.eng {
+    font-family: Tourney, Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 0.88px;
+    padding-right: 50px;
+}
+
+nav {
+    font-family: Staatliches, Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    letter-spacing: 0.66px;
+    display: flex;
+    height: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+.logo {
+    margin-left: auto;
+}
+
+.body {
+    margin-top: 70px;
+    display: flex;
+    gap: 10px;
+    align-items: start;
+}
+
+.menu {
+    width: 32.08%;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    padding: 10px;
+    position: sticky;
+    top: 150px;
+}
+
+.menu__link {
+    font-family: "Francois One", Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    color: #000;
+    line-height: 48px;
+    letter-spacing: 1.44px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #BDBDBD;
+}
+
+.main {
+    width: 65.42%;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    background-image: url(../images/svg/bg.svg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 82% 85%;
+    background-size: 33%;
+}
+
+.main__chapter,
+.main__chapter-text {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.main__chapter:last-child {
+    padding-bottom: 90px;
+}
+
+h2 {
+    font-family: Francois One;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: 1.44px;
+    text-transform: uppercase;
+    padding-top: 28px;
+    position: relative;
+    display: inline-flex;
+    align-items: baseline;
+}
+
+h2::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100px;
+    height: 8px;
+    background-color: #000;
+}
+
+.subscript {
+    font-family: Farro, Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    font-style: normal;
+    text-transform: none;
+    letter-spacing: 1.2px;
+    position: absolute;
+    top: 10px;
+    right: -105px;
+}
+
+.underline {
+    text-decoration-line: underline;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.code {
+    background-color: #DADADA;
+    padding: 5px 0;
+}
