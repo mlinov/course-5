@@ -1,0 +1,35 @@
+.wrapper {
+    border: 1px solid $color-gold;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.wrapper>img {
+    width: 400px;
+    height: 400px;
+    border: 1px solid $color-gold;
+    position: relative;
+    z-index: 1;
+}
+
+.wrapper::before,
+.wrapper::after {
+    position: absolute;
+    content: '';
+    background-color: $color-white;
+}
+
+.wrapper::before {
+    top: -1px;
+    left: calc(50% - 415px);
+    bottom: -1px;
+    width: 230px;
+}
+
+.wrapper::after {
+    top: calc(50% - 165px);
+    left: calc(50% - 518px);
+    height: 230px;
+    width: 432px;
+    z-index: 0;
+}

@@ -1,0 +1,78 @@
+@font-face {
+    font-display: swap;
+    font-family: $default-font-name;
+    font-style: normal;
+    font-weight: 500;
+    src: url('#{$font-path}raleway-v28-latin-500.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    src: url('#{$font-path}roboto-v30-latin-900.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    src: url('#{$font-path}raleway-v28-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: url('#{$font-path}open-sans-v35-latin-700.woff2') format('woff2');
+}
+
+body {
+    background-color: $default-body-color;
+    font-family: $main-font;
+    font-size: 14px;
+    font-style: normal;
+    text-align: center;
+}
+
+.container {
+    padding: $container-padding;
+    max-width: $container-max-width;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 90px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.col-6 {
+    width: 50%;
+    max-width: 430px;
+    padding-top: 66px;
+    padding-bottom: 66px;
+}
+
+.col-6:first-child {
+    border-right: 1px solid $color-gold;
+    padding-right: 85px;
+}
+
+.col-6:last-child {
+    padding-left: 85px;
+}
+
+p {
+    color: $color-text;
+    font-family: $main-font;
+    font-weight: 500;
+    line-height: 24px;
+    font-size: 14px;
+}

@@ -1,0 +1,50 @@
+.head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.desc {
+    font-family: $main-font;
+    font-size: 18px;
+    font-weight: 500;
+    color: $color-subtext;
+    text-transform: uppercase;
+    line-height: 24px;
+    padding-bottom: 15px;
+}
+
+h2 {
+    color: $color-gold;
+    font-family: $title-font;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 66px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+h2::before {
+    content: "";
+    background-color: $color-gold;
+    position: absolute;
+    top: 107px;
+    left: -25%;
+    height: 1px;
+    width: 148%;
+    max-width: 450px;
+}
+
+h2::after {
+    content: "";
+    position: absolute;
+    background-image: url(../../images/svg/bonfire.svg);
+    background-color: $color-white;
+    height: 20px;
+    width: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 98px;
+    left: 135px;
+}

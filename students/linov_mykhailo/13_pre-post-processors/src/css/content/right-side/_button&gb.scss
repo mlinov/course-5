@@ -1,0 +1,40 @@
+.goldenbrick {
+    width: 20px;
+    height: 4px;
+    background-color: $color-gold;
+    margin: 0 auto;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.goldenbrick::before {
+    content: '';
+    width: 10px;
+    height: 4px;
+    background-color: $color-gold;
+    position: absolute;
+    top: 0;
+    left: -15px;
+}
+
+.goldenbrick::after {
+    content: '';
+    width: 10px;
+    height: 4px;
+    background-color: $color-gold;
+    position: absolute;
+    top: 0;
+    right: -15px;
+}
+
+.button {
+    color: $color-name;
+    font-family: 'Open Sans', $fallback;
+    font-weight: 700;
+    line-height: 14px;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    border: 1px solid $color-gold;
+    background-color: $color-white;
+}
