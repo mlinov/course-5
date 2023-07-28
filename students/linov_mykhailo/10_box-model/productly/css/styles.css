@@ -59,23 +59,20 @@ body {
 
 .container {
     padding: 17px 120px;
-    height: 80px;
     width: 1440px;
     margin: 0 auto;
     box-sizing: border-box;
 }
 
-.logo__image {
+.logo {
     float: left;
     width: 200px;
-    height: 32px;
     padding: 7px 0;
 }
 
 .header_buttons {
     float: right;
-    width: 250px;
-    height: 46px;
+    padding-top: 15px;
 }
 
 li {
@@ -85,11 +82,10 @@ li {
 nav {
     text-align: center;
     display: inline-block;
-    width: calc(100% - 200px - 252px);
+    width: calc(100% - 455px);
 }
 
 ul.nav {
-    height: 28px;
     padding: 9px 0;
 }
 
@@ -118,11 +114,9 @@ a {
 
 .sign_in,
 .sign_up {
-    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     font-size: 16px;
     font-weight: 600;
-    height: 46px;
-    width: 110px;
+    padding: 13px 25px;
     border-radius: 4px;
     box-sizing: border-box;
 }
@@ -141,27 +135,13 @@ a {
     margin-left: 12px;
 }
 
-.main {
-    height: 500px;
-}
-
 /* footer */
-
-.footcont {
-    width: 1200px;
-    height: 209px;
-    margin: 0 auto;
-    padding: 70px 0;
-}
 
 .footone,
 .foottwo {
     float: left;
-    height: 209px;
     padding-right: 125px;
 }
-
-
 
 .footone {
     width: 200px;
@@ -177,7 +157,6 @@ a {
 }
 
 h3 {
-    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     font-size: 20px;
     font-weight: 700;
     line-height: 30px;
@@ -200,7 +179,6 @@ h3 {
 }
 
 .footer-nav a {
-    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     font-weight: 500;
     line-height: 26px;
     color: #544837;
