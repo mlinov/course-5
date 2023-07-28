@@ -73,7 +73,7 @@ li {
 }
 
 .container {
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 15px;
     display: flex;
@@ -81,7 +81,7 @@ li {
 
 /* header */
 
-.header {
+.header .container {
     justify-content: space-between;
     align-items: center;
     padding: 17px 120px;
@@ -110,8 +110,7 @@ li {
 
 .signin,
 .signup {
-    width: 110px;
-    height: 46px;
+    padding: 13px 25px;
     border-radius: 4px;
     font-family: "Montserrat", Arial, Helvetica, sans-serif;
     font-size: 16px;
@@ -165,21 +164,20 @@ h4 {
 }
 
 .get-started {
-    width: 180px;
-    height: 50px;
+    padding: 13px 40px;
+    max-width: 180px;
 }
 
-.superpowers {
+.superpowers .container {
     padding-top: 75px;
     flex-direction: column;
 }
 
 .bg {
     background-image: url(../images/svg/bg.svg);
-    background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: bottom 80px;
+    background-position: bottom 20px center;
 }
 
 .main-idea {
@@ -227,7 +225,7 @@ h3 {
 
 /* footer */
 
-.footer {
+.footer .container {
     padding-top: 70px;
     padding-bottom: 70px;
     display: flex;
@@ -252,8 +250,8 @@ h4 {
     gap: 15px;
 }
 
-.footer__signup {
-    gap: 25px;
+.col__links a {
+    color: #544837;
 }
 
 .footer__signup h4 {
@@ -267,6 +265,7 @@ h4 {
     width: 340px;
     height: 50px;
     padding: 0px 10px;
+    margin-bottom: 25px;
     align-items: center;
     gap: 10px;
 }
