@@ -1,0 +1,29 @@
+.section-title>h2 {
+    padding-bottom: 20px;
+}
+
+.section-title .subtitle {
+    padding-bottom: 40px;
+}
+
+.section-title {
+    width: 486px;
+}
+
+h5 {
+    @include font-family(700, 16px, $color-title);
+}
+
+.main-text {
+    @include flex-jst-sbw-col;
+    gap: 30px;
+    max-width: 496px;
+}
+
+.main-text h5 {
+    padding-bottom: 10px;
+}
+
+.desing-prof {
+    padding-top: 18px;
+}

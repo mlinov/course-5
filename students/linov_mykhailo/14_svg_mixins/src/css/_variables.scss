@@ -1,0 +1,24 @@
+//colors
+$color-white: #FFF;
+$color-orange: #F90;
+$color-title: #2F281E;
+$color-nav: $color-title;
+$color-text: #544837;
+$color-placeholder: #BCD0E5;
+$default-body-color: $color-white;
+
+//fonts
+$default-font-name: 'Montserrat';
+$fallback: Arial, Helvetica, sans-serif;
+$main-font: $default-font-name, $fallback;
+$button-font-name: 'Poppins';
+$button-font: $button-font-name, $fallback;
+$gotham-font-name: 'Figtree';
+$gotham-font: $gotham-font-name, $fallback;
+$font-path: './fonts/';
+
+//containers
+$container-max-width: 1200px;
+$gap: 15px;
+$defaulp-count-col: 12;
+$default-width: 1200px;

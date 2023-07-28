@@ -1,0 +1,25 @@
+.hero {
+    padding-top: 85px;
+    padding-bottom: 70px;
+    width: 500px;
+}
+
+h1 {
+    @include font-family (700, 44px, $color-title, 54px);
+    padding-bottom: 30px;
+}
+
+.hero-text {
+    @include font-family (400, 18px, $color-text, 28px);
+    padding-bottom: 20px;
+}
+
+.button-large {
+    padding: 13px 0;
+    width: 180px;
+    height: 24px;
+}
+
+.hero-pic {
+    padding-left: 45px;
+}

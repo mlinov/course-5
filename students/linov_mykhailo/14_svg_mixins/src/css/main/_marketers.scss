@@ -1,0 +1,27 @@
+.managers-pad {
+    padding-left: 80px;
+    padding-top: 15px;
+}
+
+.mark-list li {
+    position: relative;
+    max-width: 440px;
+    padding-bottom: 30px;
+    padding-left: 65px;
+}
+
+.mark-list li::before {
+    content: '';
+    position: absolute;
+    background-image: url('../../images/svg/mark.svg');
+    left: 0;
+    top: 6px;
+    background-size: cover;
+    background-position: center;
+    width: 35px;
+    height: 35px;
+}
+
+.one {
+    padding-left: 45px;
+}

@@ -1,0 +1,19 @@
+h2 {
+    @include font-family (700, 36px, $color-title, normal);
+}
+
+h4 {
+    @include font-family (600, 22px, $color-title, normal);
+    padding: 30px 0 16px;
+}
+
+.pad-70 {
+    padding-top: 70px;
+}
+
+.bg-cemicercle {
+    background-image: url(../../images/svg/bg.svg);
+    background-repeat: no-repeat;
+    background-position: bottom 60px center;
+    background-size: cover;
+}

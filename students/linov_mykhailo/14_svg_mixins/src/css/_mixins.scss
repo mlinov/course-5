@@ -1,0 +1,66 @@
+@mixin font-face($_font-name, $_font-weight: 500, $_font-style: normal, $_font-family: $default-font-name) {
+    @font-face {
+        font-family: $_font-family;
+        font-style: $_font-style;
+        font-weight: $_font-weight;
+        src: url('#{$font-path}#{$_font-name}.woff2') format('woff2');
+    }
+}
+
+@mixin container {
+    .container {
+        max-width: $default-width;
+        margin: 0 auto;
+        padding: 0 $gap;
+    }
+}
+
+@mixin grid($count: 12) {
+    @include container;
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 (-$gap);
+    }
+
+    [class*="col-"] {
+        padding: $gap;
+        box-sizing: border-box;
+    }
+
+    @for $i from 1 through $count {
+        $width: calc(100% / $count * $i);
+
+        .col-#{$i} {
+            max-width: $width;
+            width: 100%;
+            flex-basis: $width;
+        }
+    }
+}
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin flex-jst-sbw {
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin flex-jst-sbw-col {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+@mixin font-family ($_weight: 500, $_size: 16px, $_color: $color-text, $_height: 26px, $_family: $main-font, $_style: normal) {
+    font-weight: $_weight;
+    font-size: $_size;
+    color: $_color;
+    line-height: $_height;
+    font-family: $_family;
+    font-style: $_style;
+}
