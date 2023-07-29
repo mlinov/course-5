@@ -61,7 +61,7 @@ body {
     color: #000;
 }
 
-header {
+.header {
     position: sticky;
     top: 0;
     background-color: #fff;
@@ -70,10 +70,10 @@ header {
 
 .container {
     margin: 0 auto;
-    width: 1200px;
+    max-width: 1200px;
 }
 
-.header {
+.header .container {
     display: flex;
     align-items: center;
     padding-top: 13px;
@@ -89,10 +89,16 @@ header {
     padding-right: 50px;
 }
 
-nav {
+.header a {
     font-family: Staatliches, Arial, Helvetica, sans-serif;
     font-size: 22px;
+    color: #000;
     letter-spacing: 0.66px;
+    text-decoration: none;
+}
+
+nav {
+
     display: flex;
     height: 20px;
     justify-content: center;
@@ -105,7 +111,7 @@ nav {
     margin-left: auto;
 }
 
-.body {
+.main .container {
     margin-top: 70px;
     display: flex;
     gap: 10px;
@@ -134,7 +140,7 @@ nav {
     border-bottom: 1px solid #BDBDBD;
 }
 
-.main {
+.content {
     width: 65.42%;
     display: flex;
     flex-direction: column;
@@ -165,8 +171,6 @@ h2 {
     text-transform: uppercase;
     padding-top: 28px;
     position: relative;
-    display: inline-flex;
-    align-items: baseline;
 }
 
 h2::before {
@@ -186,21 +190,21 @@ h2::before {
     font-style: normal;
     text-transform: none;
     letter-spacing: 1.2px;
+    line-height: normal;
     position: absolute;
-    top: 10px;
-    right: -105px;
+    padding-left: 10px;
 }
 
-.underline {
-    text-decoration-line: underline;
-}
-
-.italic {
-    font-style: italic;
-}
-
-.bold {
+b {
     font-weight: 700;
+}
+
+u {
+    text-decoration: underline;
+}
+
+i {
+    font-style: italic;
 }
 
 .code {
