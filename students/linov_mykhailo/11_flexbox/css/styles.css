@@ -131,7 +131,7 @@ li {
 
 /* main */
 
-.hero {
+.hero .container {
     justify-content: space-between;
     padding-top: 70px;
 }
@@ -164,8 +164,9 @@ h4 {
 }
 
 .get-started {
+    max-width: 100px;
     padding: 13px 40px;
-    max-width: 180px;
+    text-align: center;
 }
 
 .superpowers .container {
