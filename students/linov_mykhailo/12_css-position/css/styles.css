@@ -97,16 +97,6 @@ body {
     text-decoration: none;
 }
 
-nav {
-
-    display: flex;
-    height: 20px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    flex-shrink: 0;
-}
-
 .logo {
     margin-left: auto;
 }
@@ -163,7 +153,7 @@ nav {
     padding-bottom: 90px;
 }
 
-h2 {
+.h-two {
     font-family: Francois One;
     font-size: 36px;
     line-height: 48px;
@@ -173,7 +163,7 @@ h2 {
     position: relative;
 }
 
-h2::before {
+.h-two::before {
     content: "";
     position: absolute;
     left: 0;
