@@ -1,4 +1,4 @@
-h3 {
+.name {
     color: $color-name;
     text-align: center;
     font-family: $title-font;
@@ -12,7 +12,7 @@ h3 {
     padding-bottom: 30px;
 }
 
-h3::after {
+.name::after {
     content: '';
     position: absolute;
     top: 69px;
