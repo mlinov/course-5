@@ -1,33 +1,3 @@
-.goldenbrick {
-    width: 20px;
-    height: 4px;
-    background-color: $color-gold;
-    margin: 0 auto;
-    margin-top: 15px;
-    margin-bottom: 25px;
-    position: relative;
-}
-
-.goldenbrick::before {
-    content: '';
-    width: 10px;
-    height: 4px;
-    background-color: $color-gold;
-    position: absolute;
-    top: 0;
-    left: -15px;
-}
-
-.goldenbrick::after {
-    content: '';
-    width: 10px;
-    height: 4px;
-    background-color: $color-gold;
-    position: absolute;
-    top: 0;
-    right: -15px;
-}
-
 .button {
     color: $color-name;
     font-family: 'Open Sans', $fallback;
@@ -37,4 +7,41 @@
     padding: 5px 10px;
     border: 1px solid $color-gold;
     background-color: $color-white;
+    margin-top: 40px;
+    position: relative;
+}
+
+.button::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 4px;
+    background-color: $color-gold;
+    bottom: 46px;
+    right: 48px;
+}
+
+
+.description {
+    position: relative;
+}
+
+.description::after {
+    content: '';
+    width: 10px;
+    height: 4px;
+    background-color: $color-gold;
+    position: absolute;
+    top: 135px;
+    right: 190px;
+}
+
+.description::before {
+    content: '';
+    width: 10px;
+    height: 4px;
+    background-color: $color-gold;
+    position: absolute;
+    top: 135px;
+    left: 190px;
 }
