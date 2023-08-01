@@ -1,22 +1,19 @@
 .subtitle {
     padding-top: 20px;
     padding-bottom: 40px;
+    max-width: 486px;
 }
 
-h5 {
+.small-header {
     @include font-family(700, 16px, $color-title);
-}
-
-.main-text {
-    @include flex-jst-sbw-col;
-    gap: 30px;
-    max-width: 496px;
-}
-
-.main-text h5 {
     padding-bottom: 10px;
 }
 
 .desing-prof {
     padding-top: 18px;
+}
+
+.text {
+    padding-bottom: 30px;
+    max-width: 486px;
 }

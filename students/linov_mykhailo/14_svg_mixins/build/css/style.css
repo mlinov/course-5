@@ -1046,8 +1046,8 @@ h1 {
 }
 
 .button-large {
-  padding: 13px 0;
-  width: 180px;
+  padding: 13px 40px;
+  max-width: 180px;
   height: 24px;
 }
 
@@ -1055,7 +1055,7 @@ h1 {
   padding-left: 45px;
 }
 
-h2 {
+.big-header {
   font-weight: 700;
   font-size: 36px;
   color: #2F281E;
@@ -1064,7 +1064,7 @@ h2 {
   font-style: normal;
 }
 
-h4 {
+.mid-size-header {
   font-weight: 600;
   font-size: 22px;
   color: #2F281E;
@@ -1079,7 +1079,7 @@ h4 {
 }
 
 .bg-cemicercle {
-  background-image: url(../../images/svg/bg.svg);
+  background-image: url(../images/svg/bg.svg);
   background-repeat: no-repeat;
   background-position: bottom 60px center;
   background-size: cover;
@@ -1088,38 +1088,26 @@ h4 {
 .subtitle {
   padding-top: 20px;
   padding-bottom: 40px;
+  max-width: 486px;
 }
 
-h5 {
+.small-header {
   font-weight: 700;
   font-size: 16px;
   color: #2F281E;
   line-height: 26px;
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
   font-style: normal;
-}
-
-.main-text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  gap: 30px;
-  max-width: 496px;
-}
-
-.main-text h5 {
   padding-bottom: 10px;
 }
 
 .desing-prof {
   padding-top: 18px;
+}
+
+.text {
+  padding-bottom: 30px;
+  max-width: 486px;
 }
 
 .managers-pad {
