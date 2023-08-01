@@ -15,37 +15,29 @@
     position: relative;
 }
 
-.button::after {
-    content: '';
-    position: absolute;
-    width: 20px;
-    height: 4px;
-    background-color: $color-gold;
-    bottom: 52px;
-    right: 48px;
-}
-
-
 .description {
     position: relative;
 }
 
+.description::before,
 .description::after {
     content: '';
-    width: 10px;
-    height: 4px;
-    background-color: $color-gold;
     position: absolute;
+    background-color: $color-gold;
     top: 135px;
-    right: 190px;
+    height: 4px;
 }
 
 .description::before {
-    content: '';
-    width: 10px;
-    height: 4px;
-    background-color: $color-gold;
-    position: absolute;
-    top: 135px;
-    left: 190px;
+    width: 20px;
+    right: 200px;
+    border-left: 5px solid $color-white;
+    border-right: 5px solid $color-white;
+    z-index: 1;
+}
+
+.description::after {
+    width: 50px;
+    right: 190px;
+    z-index: -1;
 }
