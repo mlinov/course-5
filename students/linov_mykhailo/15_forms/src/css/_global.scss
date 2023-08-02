@@ -1,0 +1,15 @@
+@include font-face('roboto-v30-latin-700', 700);
+
+@include font-face('roboto-v30-latin-700', 700, $_font-style: italic);
+
+body {
+    font-family: $main-font;
+    background-color: $white-color;
+    font-size: $default-font-size;
+}
+
+@include grid();
+
+.container {
+    background-color: $gray-3-color;
+}
