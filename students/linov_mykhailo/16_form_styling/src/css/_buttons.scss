@@ -1,0 +1,28 @@
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    background-color: $gray-8-color;
+    margin: 0 15px;
+}
+
+.btn {
+    padding: 15px 40px;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    text-transform: uppercase;
+    border: 1px solid $grey-7-color;
+    // .btn__cancel
+
+    &__cancel {
+        background-color: $white-color;
+        color: $orang-color;
+    }
+
+    // .btn__submit
+
+    &__submit {
+        background-color: $orang-color;
+        color: $white-color;
+    }
+}

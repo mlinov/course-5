@@ -1,0 +1,8 @@
+.textarea {
+    @extend .form-input;
+    height: $textarea-height;
+}
+
+.textarea+.icon {
+    height: auto;
+}
