@@ -1,6 +1,6 @@
 @include font-face('roboto-v30-latin-regular');
 @include font-face('roboto-v30-latin-500', 500);
-@include font-face('delius-unicase-v26-latin-regular');
+@include font-face('delius-unicase-v26-latin-regular', 400, normal, 'Delius Unicase');
 
 body {
     font-family: $main-font;
@@ -26,9 +26,15 @@ img {
     border-radius: 20px;
 }
 
-.container .title {
+.title {
     @include font-family (400, 36px, $black-color, normal, 1.8px, $title-main, normal);
     text-align: center;
+    text-shadow: 3px 3px 10px $gray-8-color;
+    padding-top: 120px;
+    padding-bottom: 80px;
+}
+
+.title:first-of-type {
     padding-top: 36px;
     padding-bottom: 50px;
 }

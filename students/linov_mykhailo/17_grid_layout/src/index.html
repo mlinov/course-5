@@ -12,26 +12,124 @@
     <main class="main">
         <div class="container">
             <h2 class="title">Architectural photography</h2>
-            <div class="grid">
-                <div class="grid__item">
-                    <div class="grid__text">
-                        <p class="grid__text-author">Jezael Melgoza</p>
-                        <p class="grid__text-date">5 June 2020</p>
-                    </div>
-                    <img src="images/img-1.jpg" alt="image">
-                </div>
-                <div class="grid__item">
-                    <div class="grid__text">
-                        <p class="grid__text-author">Jezael Melgoza</p>
-                        <p class="grid__text-date">5 June 2020</p>
-                    </div>
-                    <img src="images/img-2.jpg" alt="image">
-                </div>
-                <div class="grid__item">3</div>
-                <div class="grid__item">4</div>
-                <div class="grid__item">5</div>
-                <div class="grid__item">6</div>
-            </div>
+            <section class="grid architectural-layout">
+                @@include('grid_item.html', {
+                "author": "Jezael Melgoza",
+                "date": "5 June 2020",
+                "path": "images/img-1.jpg"
+                })
+                @@include('grid_item.html', {
+                "author": "Tom W",
+                "date": "30 March 2021",
+                "path": "images/img-2.jpg"
+                })
+                @@include('grid_item.html', {
+                "author": "Johan Mouchet",
+                "date": "14 August 2019",
+                "path": "images/img-3.jpg"
+                })
+                @@include('grid_item.html', {
+                "author": "Federico Di Dio",
+                "date": "29 October 2020 ",
+                "path": "images/img-4.jpg"
+                })
+                @@include('grid_item.html', {
+                "author": "Casey Horner",
+                "date": "9 July 2021",
+                "path": "images/img-5.jpg"
+                })
+                @@include('grid_item.html', {
+                "author": "Alexander Rotker",
+                "date": "22 April 2022",
+                "path": "images/img-6.jpg"
+                })
+            </section>
+            <h2 class="title">Still Life Photography</h2>
+            <section class="grid still-life-layout">
+                @@include('grid_item.html', {
+                "author": "Robert Lukeman",
+                "date": "30 June 2020",
+                "path": "images/img-21.jpg"
+                })
+                @@include('grid_item.html', {
+                "author": "Sean Oulashin",
+                "date": "5 September 2019",
+                "path": "images/img-22.jpg"
+                })
+                @@include('grid_item.html', {
+                "author": "John Fowler",
+                "date": "10 August 2021",
+                "path": "images/img-23.jpg"
+                })
+                @@include('grid_item.html', {
+                "author": "Dave Hoefler",
+                "date": "13 February 2021",
+                "path": "images/img-24.jpg"
+                })
+                @@include('grid_item.html', {
+                "author": "Léonard Cotte",
+                "date": "5 September 2019",
+                "path": "images/img-25.jpg"
+                })
+                @@include('grid_item.html', {
+                "author": "Rob Mulally",
+                "date": "30 May 2020",
+                "path": "images/img-26.jpg"
+                })
+            </section>
+            <h2 class="title">Portrait and Fashion Photography</h2>
+            <section class="grid portrait-fashion-layout">
+                @@include('grid_item.html', {
+                "author": "Pooja Chaudhary",
+                "date": "30 June 2020",
+                "path": "images/img-31.jpg"
+                })
+                @@include('grid_item.html', {
+                "author": "Dom Hill",
+                "date": "13 October 2021",
+                "path": "images/img-33.jpg"
+                })
+                @@include('grid_item.html', {
+                "author": "Seth Doyle",
+                "date": "30 May 2020",
+                "path": "images/img-34.jpg"
+                })
+                @@include('grid_item.html', {
+                "author": "devn",
+                "date": "30 June 2020",
+                "path": "images/img-32.jpg"
+                })
+                @@include('grid_item.html', {
+                "author": "Noah Buscher",
+                "date": "13 February 2021",
+                "path": "images/img-30.jpg"
+                })
+                @@include('grid_item.html', {
+                "author": "Sincerely Media",
+                "date": "7 January 2021",
+                "path": "images/img-35.jpg"
+                })
+                @@include('grid_item.html', {
+                "author": "Seth Doyle",
+                "date": "30 June 2020",
+                "path": "images/img-36.jpg"
+                })
+                @@include('grid_item.html', {
+                "author": "Melissa Askew",
+                "date": "29 April 2021",
+                "path": "images/img-37.jpg"
+                })
+                @@include('grid_item.html', {
+                "author": "Brooke Cagle",
+                "date": "5 August 2019",
+                "path": "images/img-38.jpg"
+                })
+                @@include('grid_item.html', {
+                "author": "Clem Onojeghuo",
+                "date": "1 July 2021",
+                "path": "images/img-39.jpg"
+                })
+            </section>
         </div>
     </main>
 </body>
