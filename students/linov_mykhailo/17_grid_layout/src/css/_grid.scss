@@ -10,7 +10,7 @@
     &__item {
         position: relative;
 
-        &::after {
+        &::before {
             content: '';
             position: absolute;
             background: linear-gradient(0deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%);
@@ -23,10 +23,11 @@
         }
 
         &:hover {
-            box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.5);
-            background: linear-gradient(270deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%);
-            border-radius: 20px;
-            z-index: 1;
+            &::before {
+                box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.5);
+                background: linear-gradient(0deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%);
+                transition: opacity 0.3s ease-in-out;
+            }
 
             .grid__icons {
                 visibility: visible;
