@@ -1,9 +1,9 @@
 .big-header {
-    @include font-family (700, 36px, $color-title, normal);
+    @include font-family(700, 36px, $color-title, normal);
 }
 
 .mid-size-header {
-    @include font-family (600, 22px, $color-title, normal);
+    @include font-family(600, 22px, $color-title, normal);
     padding: 30px 0 16px;
 }
 

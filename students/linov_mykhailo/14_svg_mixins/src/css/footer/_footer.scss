@@ -1,5 +1,5 @@
 .gotham-h4 {
-    @include font-family (700, 20px, $color-title, 30px, $gotham-font, normal);
+    @include font-family(700, 20px, $color-title, 30px, $gotham-font, normal);
     padding: 0 0 30px;
 }
 

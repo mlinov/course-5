@@ -56,7 +56,7 @@
     flex-direction: column;
 }
 
-@mixin font-family ($_weight: 500, $_size: 16px, $_color: $color-text, $_height: 26px, $_family: $main-font, $_style: normal) {
+@mixin font-family($_weight: 500, $_size: 16px, $_color: $color-text, $_height: 26px, $_family: $main-font, $_style: normal) {
     font-weight: $_weight;
     font-size: $_size;
     color: $_color;
