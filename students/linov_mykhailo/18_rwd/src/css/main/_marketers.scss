@@ -4,6 +4,7 @@
 
     @include media(lg) {
         padding-left: 0;
+        text-align: center;
     }
 }
 
@@ -16,6 +17,11 @@
     max-width: 440px;
     padding-bottom: 30px;
     padding-left: 65px;
+
+    @include media(lg) {
+        text-align: center;
+        margin: 0 auto;
+    }
 }
 
 .mark-list li::before {

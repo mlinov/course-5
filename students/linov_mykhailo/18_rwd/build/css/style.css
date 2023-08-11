@@ -1157,6 +1157,12 @@ a {
   max-width: 486px;
   margin: 0;
 }
+@media screen and (max-width: 992px) {
+  .subtitle {
+    text-align: center;
+    margin: 0 auto;
+  }
+}
 
 .small-header {
   font-weight: 700;
@@ -1173,16 +1179,29 @@ a {
 .desing-prof {
   padding-top: 18px;
 }
+@media screen and (max-width: 992px) {
+  .desing-prof {
+    text-align: center;
+    margin: 0 auto;
+  }
+}
 
 .text {
   padding-bottom: 30px;
   max-width: 486px;
   margin: 0;
 }
+@media screen and (max-width: 992px) {
+  .text {
+    text-align: center;
+    margin: 0 auto;
+  }
+}
 
 @media screen and (max-width: 1200px) {
   .centered {
     text-align: center;
+    margin: 0 auto;
   }
 }
 
@@ -1193,6 +1212,7 @@ a {
 @media screen and (max-width: 1200px) {
   .managers-pad {
     padding-left: 0;
+    text-align: center;
   }
 }
 
@@ -1201,6 +1221,12 @@ a {
   max-width: 440px;
   padding-bottom: 30px;
   padding-left: 65px;
+}
+@media screen and (max-width: 1200px) {
+  .mark-list li {
+    text-align: center;
+    margin: 0 auto;
+  }
 }
 
 .mark-list li::before {

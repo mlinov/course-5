@@ -3,6 +3,11 @@
     padding-bottom: 40px;
     max-width: 486px;
     margin: 0;
+
+    @include media(md) {
+        text-align: center;
+        margin: 0 auto;
+    }
 }
 
 .small-header {
@@ -13,16 +18,27 @@
 
 .desing-prof {
     padding-top: 18px;
+
+    @include media(md) {
+        text-align: center;
+        margin: 0 auto;
+    }
 }
 
 .text {
     padding-bottom: 30px;
     max-width: 486px;
     margin: 0;
+
+    @include media(md) {
+        text-align: center;
+        margin: 0 auto;
+    }
 }
 
 .centered {
     @include media(lg) {
         text-align: center;
+        margin: 0 auto;
     }
 }
