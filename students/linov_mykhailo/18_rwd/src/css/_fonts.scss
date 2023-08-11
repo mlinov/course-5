@@ -1,0 +1,6 @@
+@include font-face('montserrat-v25-latin-500');
+@include font-face('montserrat-v25-latin-600', 600);
+@include font-face('montserrat-v25-latin-700', 700);
+@include font-face('montserrat-v25-latin-regular', 400);
+@include font-face('poppins-v20-latin-700', 700, normal, $button-font-name);
+@include font-face('figtree-v4-latin-700', 700, normal, $gotham-font-name);

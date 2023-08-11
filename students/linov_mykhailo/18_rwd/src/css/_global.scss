@@ -1,0 +1,56 @@
+body {
+    font-weight: 500;
+    background-color: $default-body-color;
+    color: $color-text;
+    line-height: 26px;
+}
+
+body,
+a {
+    font-family: $main-font;
+    font-size: 16px;
+}
+
+@include grid;
+
+section {
+    padding-bottom: 100px;
+
+    @include media (lg) {
+        padding-bottom: 20px;
+    }
+}
+
+section:first-of-type {
+    padding-top: 70px;
+
+    @include media (lg) {
+        padding-top: 5px;
+    }
+}
+
+section:last-of-type {
+    padding-bottom: 0;
+}
+
+.container {
+    &__centered {
+        margin: 0 auto;
+        text-align: center;
+        width: 539px;
+        padding-bottom: 30px;
+
+        @include media(lg) {
+            width: auto;
+        }
+    }
+}
+
+a {
+    text-decoration: none;
+    color: $color-text;
+}
+
+.regular-p {
+    margin: 0;
+}

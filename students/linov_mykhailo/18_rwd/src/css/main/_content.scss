@@ -1,0 +1,28 @@
+.subtitle {
+    padding-top: 20px;
+    padding-bottom: 40px;
+    max-width: 486px;
+    margin: 0;
+}
+
+.small-header {
+    @include font-family(700, 16px, $color-title);
+    padding-bottom: 10px;
+    margin: 0;
+}
+
+.desing-prof {
+    padding-top: 18px;
+}
+
+.text {
+    padding-bottom: 30px;
+    max-width: 486px;
+    margin: 0;
+}
+
+.centered {
+    @include media(lg) {
+        text-align: center;
+    }
+}

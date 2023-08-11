@@ -1,0 +1,21 @@
+.menu {
+    @include flex-center;
+    gap: 20px;
+    font-weight: normal;
+
+    &__item>a:hover {
+        color: $color-orange;
+    }
+
+    @extend %ul-not-marker;
+
+    @include media(md) {
+        display: block;
+        text-align: center;
+    }
+
+    @include media(sm) {
+        display: block;
+        text-align: center;
+    }
+}

@@ -1,0 +1,54 @@
+.hero {
+    padding-bottom: 70px;
+
+    @include media (lg) {
+        padding-bottom: 35px;
+    }
+}
+
+.main-title {
+    @include font-family(700, 44px, $color-title, 54px);
+    padding-bottom: 30px;
+    padding-top: 85px;
+    margin: 0;
+
+    @include media (lg) {
+        padding-top: 15px;
+        text-align: center;
+    }
+}
+
+.hero-text {
+    @include font-family(400, 18px, $color-text, 28px);
+    padding-bottom: 20px;
+    margin: 0;
+
+    @include media (lg) {
+        text-align: center;
+    }
+}
+
+a.button-large {
+    @include media (lg) {
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.button-large {
+    padding: 13px 40px;
+    max-width: 180px;
+    height: 24px;
+}
+
+.hero-pic {
+    padding-left: 45px;
+
+    @include media (lg) {
+        padding: 0;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+    }
+}
