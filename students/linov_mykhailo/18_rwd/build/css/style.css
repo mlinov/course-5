@@ -1157,6 +1157,11 @@ a {
   max-width: 486px;
   margin: 0;
 }
+@media screen and (max-width: 1200px) {
+  .subtitle {
+    margin: 0 auto;
+  }
+}
 @media screen and (max-width: 992px) {
   .subtitle {
     text-align: center;
@@ -1190,6 +1195,12 @@ a {
   padding-bottom: 30px;
   max-width: 486px;
   margin: 0;
+}
+@media screen and (max-width: 1200px) {
+  .text {
+    margin: 0 auto;
+    text-align: center;
+  }
 }
 @media screen and (max-width: 992px) {
   .text {
