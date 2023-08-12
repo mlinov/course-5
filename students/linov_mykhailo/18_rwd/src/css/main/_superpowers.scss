@@ -7,6 +7,10 @@
     @include font-family(600, 22px, $color-title, normal);
     padding: 30px 0 16px;
     margin: 0;
+
+    @include media(lg) {
+        padding-top: 16px;
+    }
 }
 
 .pad-70 {
@@ -18,4 +22,8 @@
     background-repeat: no-repeat;
     background-position: bottom 60px center;
     background-size: cover;
+
+    @include media(lg) {
+        background-position: bottom 10px center;
+    }
 }

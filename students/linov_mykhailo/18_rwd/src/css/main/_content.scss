@@ -34,13 +34,7 @@
     max-width: 486px;
     margin: 0;
 
-    @include media(lg) {
-        margin: 0 auto;
-        text-align: center;
-    }
-
     @include media(md) {
-        text-align: center;
         margin: 0 auto;
     }
 }
