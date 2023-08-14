@@ -1,1 +1,1 @@
-https://mlinov.github.io/course-5/students/linov_mykhailo/18_rwd/build/
+https://mlinov.github.io/course-5/students/linov_mykhailo/20_responsive-nav-2/build/
