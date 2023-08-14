@@ -1,0 +1,8 @@
+.logo {
+    width: 200px;
+
+    @include media(lg) {
+        padding: 0;
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,108 @@
+.menu-wrapper {
+    &__item {
+        @include flex-center;
+        gap: 20px;
+        font-weight: normal;
+
+        @extend %ul-not-marker;
+
+        @include media(sm) {
+            position: fixed;
+            width: 100%;
+            top: 110px;
+            bottom: 0;
+            display: block;
+            text-align: center;
+            background-color: white;
+            transform: translateX(-101%);
+            transition: transform .3s ease-in-out;
+
+            .menu-open-input:checked~& {
+                transform: translateX(0);
+            }
+        }
+    }
+}
+
+.menu {
+    &__item {
+        @include media(sm) {
+            &:first-child {
+                border-top: $default-border;
+            }
+
+            border-bottom: $default-border;
+            text-align: center;
+            padding: 15px 0px;
+        }
+    }
+
+    &__item>:hover {
+        color: $color-orange;
+    }
+
+}
+
+.menu-open-input {
+    @include visuality-hidden;
+}
+
+.menu-open-label {
+    @include media(sm) {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 6px;
+        border: $default-border;
+
+        .menu-open-input:checked+& {
+            .menu-open-label__line {
+                background-color: transparent;
+
+                &::before {
+                    top: 0;
+                    transform: rotate(45deg);
+                }
+
+                &::after {
+                    bottom: 0;
+                    transform: rotate(-45deg);
+                }
+            }
+        }
+
+        &__line {
+            position: relative;
+            display: block;
+            width: 70%;
+            background-color: $color-orange;
+            height: 4px;
+            border-radius: 4px;
+            border-color: $color-placeholder;
+            transition: background-color .3s ease-in-out;
+
+            &::before,
+            &::after {
+                content: "";
+                display: block;
+                width: 100%;
+                height: 100%;
+                background-color: $color-orange;
+                border-radius: inherit;
+                position: absolute;
+                transition: all .3s ease-in-out;
+            }
+
+            &::before {
+                top: -11px;
+            }
+
+            &::after {
+                bottom: -11px;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,11 @@
+@import "./logo";
+@import "./menu";
+@import "./buttons";
+
+.header .row {
+    align-items: center;
+
+    @include media(lg) {
+        padding-bottom: 20px;
+    }
+}
