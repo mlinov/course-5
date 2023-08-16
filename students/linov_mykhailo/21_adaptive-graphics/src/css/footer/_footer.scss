@@ -1,0 +1,106 @@
+.footer {
+    background-color: $footer-grey;
+
+    &__flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @include media(md) {
+            flex-direction: column;
+            gap: 40px;
+        }
+    }
+
+    &__main-title {
+        margin: 0;
+        padding-bottom: 25px;
+        font-weight: 400;
+
+        @include media(md) {
+            padding-bottom: 20px;
+            margin-bottom: 0;
+        }
+
+        @include media(sm) {
+            font-size: 32px;
+            letter-spacing: 1.6px;
+            line-height: normal;
+            padding-bottom: 0;
+        }
+    }
+
+    &__info {
+        @include media(md) {
+            padding-top: 50px;
+        }
+
+        padding-top: 70px;
+
+        &_header {
+            margin: 0;
+
+            @include media(md) {
+                text-align: center;
+            }
+        }
+
+        &_header:first-of-type {
+            padding-bottom: 15px;
+        }
+    }
+
+    &__text {
+        @include font-family(400, 16px, $black-color, 166%, 1.6px, $main-font, normal);
+        text-decoration: none;
+        margin: 0;
+
+        @include media(sm) {
+            font-size: 18px;
+            letter-spacing: 1.8px;
+        }
+    }
+
+    &__social {
+        padding-top: 15px;
+        display: flex;
+        gap: 23px;
+
+        &_icon {
+            @extend %flex-jcc-aic;
+            width: $icon-width;
+            height: $icon-height;
+            padding: $icon-padding;
+            border: $default-border;
+
+            &:hover {
+                background-color: $grey-color;
+
+                path {
+                    fill: $white-color;
+                }
+            }
+        }
+    }
+}
+
+.copyright {
+    @include font-family(400, 12px, $black-color, 166%, 1.2px, $main-font, normal);
+    text-align: center;
+    margin-top: 20px;
+    padding-bottom: 30px;
+
+    @include media(md) {
+        margin-top: 40px;
+        padding-bottom: 50px;
+    }
+
+    @include media(sm) {
+        font-size: 16px;
+        letter-spacing: 1.6px;
+    }
+}
+
+.path:hover {
+    fill: white;
+}

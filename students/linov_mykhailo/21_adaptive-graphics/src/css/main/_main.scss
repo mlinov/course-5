@@ -1,0 +1,32 @@
+.first-screen {
+    &__text {
+        max-width: 570px;
+    }
+}
+
+.title {
+    @include font-family($_weight: 600, $_size: 28px, $_color: $title-color, $_height: 166%, $_spacing: 2.8px, $_family: $title-font, $_style: normal);
+    margin-bottom: 50px;
+    margin-top: 85px;
+
+    @include media(sm) {
+        font-size: 26px;
+        letter-spacing: 2.6px;
+        margin-bottom: 40px;
+        margin-top: 65px;
+    }
+}
+
+.text {
+    line-height: 32px;
+    letter-spacing: 0.95px;
+
+    @include media(sm) {
+        font-size: 16px;
+        letter-spacing: 0.8px;
+    }
+}
+
+.text:last-of-type {
+    margin-bottom: 90px;
+}

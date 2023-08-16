@@ -1,0 +1,38 @@
+.header {
+    &__container {
+        display: flex;
+        align-items: center;
+    }
+
+    &__text {
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 8px;
+        margin: 38px 0;
+        color: $title-color;
+
+        @include media(md) {
+            margin: 18px 0;
+        }
+    }
+
+}
+
+.main-title {
+    margin-bottom: 55px;
+    @include font-family($_weight: 600, $_size: 48px, $_color: $title-color, $_height: 64px, $_spacing: 2.4px, $_family: $title-font, $_style: normal);
+
+    @include media(md) {
+        font-size: 33px;
+        line-height: 50px;
+        letter-spacing: 1.65px;
+        margin-bottom: 50px;
+    }
+
+    @include media(sm) {
+        font-size: 30px;
+        letter-spacing: 1.5px;
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+}

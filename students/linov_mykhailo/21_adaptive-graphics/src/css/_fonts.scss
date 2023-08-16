@@ -1,0 +1,3 @@
+@include font-face('lato-v24-latin-regular', $_font-weight: 400, $_font-style: normal, $_font-family: $default-font-name);
+@include font-face('red-hat-display-v14-latin-regular', $_font-weight: 400, $_font-style: normal, $_font-family: $title-font-name);
+@include font-face('red-hat-display-v14-latin-600', $_font-weight: 600, $_font-style: normal, $_font-family: $title-font-name);
