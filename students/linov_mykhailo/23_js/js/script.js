@@ -7,10 +7,10 @@
 
 // 2. Тобі потрібно зберігати ім’я та прізвище в змінній, придумай до 4-х імен змінних, що потрібні тобі для даної задачі. Також напиши до 5 неправильних імен (неправильні імена повинні бути закоментовані);
 
-let name = "Mykhailo Linov";
-let firstAndLastName = "Mykhailo Linov";
-let _myName = "Mykhailo Linov";
-let $Name = "Mykhailo Linov";
+const name = "Mykhailo Linov";
+const firstAndLastName = "Mykhailo Linov";
+const _myName = "Mykhailo Linov";
+const $Name = "Mykhailo Linov";
 
 //let 9name;
 // let myName!;
@@ -41,7 +41,8 @@ let $Name = "Mykhailo Linov";
 // 1. Запитай ім’я користувача та виведи у відповідь “Привіт, *ім’я*”;
 
 const userName = prompt("What is your name?");
-console.log("Hello, ", userName);
+const userGreeting = 'Hello, ';
+console.log(userGreeting, userName);
 
 
 // 2. Запитай рік народження користувача, порахуй його/її вік і виведи результат. Поточний рік вкажи в коді як константу;
