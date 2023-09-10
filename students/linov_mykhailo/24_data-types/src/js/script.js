@@ -13,7 +13,7 @@ console.log(sumOfTwoNumbers);
 
 const string = '1';
 const number = 2;
-const sumOfStringAndNumber = ((+string) * 10 + number * 10) / 10;
+const sumOfStringAndNumber = ((+string) + number);
 console.log(sumOfStringAndNumber);
 
 
