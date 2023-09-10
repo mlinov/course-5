@@ -1,0 +1,45 @@
+// colors
+$white-color: #fff;
+$violet-color: #5373FD;
+$darker-violet-color: #486BFE;
+$grey-color: #999;
+$dark-grey-color: #333333;
+$grey-card-color: #232323E5;
+$black-color: #000;
+
+$border-btn-color: $violet-color;
+$btn-color: $violet-color;
+
+$border-color: $violet-color;
+$default-border: 1px solid $white-color;
+
+$default-body-color: $white-color;
+
+// fonts
+$default-font-name: 'Josefin Sans';
+$fallback: Arial, Helvetica, sans-serif;
+$default-font-size: 16px;
+$default-font-color: $white-color;
+
+$sub-font-name: 'Aleo';
+$sub-font: $sub-font-name, $fallback;
+
+$main-font: $default-font-name, $fallback;
+$font-path: './fonts/';
+
+// containers
+$container-padding: 15px;
+$container-max-width: 1200px;
+
+$gap: 15px;
+$default-count-col: 12;
+
+$default-width: 1320px;
+
+$breack-points: (
+    "lg": 1200px,
+    "md": 992px,
+    "sm": 768px,
+    "xs": 576px,
+    "xxs": 480px
+);

@@ -1,0 +1,82 @@
+.header {
+    background-image: url("../../images/header.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+
+    &__hero {
+        padding-top: 280px;
+        max-width: 647px;
+        margin: 0 auto;
+        text-align: center;
+
+        @include media (md) {
+            padding-top: 200px;
+        }
+
+        @include media (sm) {
+            padding-top: 150px;
+        }
+
+        &_text {
+            letter-spacing: 6.82px;
+            margin: 0;
+            padding-top: 8px;
+            padding-bottom: 48px;
+            @include font-family(400, 22px);
+        }
+
+        &_scroll-down {
+            display: block;
+            text-decoration: none;
+            color: $default-font-color;
+            font-family: inherit;
+            letter-spacing: 2.8px;
+            font-size: 14px;
+
+            svg {
+                display: block;
+                margin: 0 auto;
+                padding-top: 4px;
+            }
+        }
+
+    }
+}
+
+.main-title {
+    @include font-family(700, 48px, $default-font-color, 52px);
+    margin: 0;
+}
+
+.btn {
+    display: block;
+    @include font-family(400, 16px, $default-font-color, 20px, $sub-font);
+    letter-spacing: 1.12px;
+    max-width: 213px;
+    padding: 20px 32px;
+    background-color: $btn-color;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    white-space: nowrap;
+    box-sizing: border-box;
+
+    &:hover {
+        background-color: $darker-violet-color;
+    }
+}
+
+.hero-btn {
+    @include font-family(400, 14px, $default-font-color, 20px, $sub-font);
+    letter-spacing: 1.4px;
+    padding: 16px 24px;
+    align-items: center;
+    display: flex;
+    gap: 12px;
+    position: absolute;
+    top: 4px;
+    right: 5px;
+}

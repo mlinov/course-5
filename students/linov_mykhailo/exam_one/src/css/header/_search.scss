@@ -1,0 +1,42 @@
+.header {
+    &__hero {
+        &_form {
+            position: relative;
+        }
+
+        &_form-input {
+            padding: 20px 334px 20px 36px;
+            width: 647px;
+            margin-bottom: 211px;
+
+            @include media(sm) {
+                max-width: 450px;
+                padding-right: 36px;
+                margin-bottom: 150px;
+            }
+
+            @include media(xxs) {
+                max-width: 350px;
+            }
+
+            &::placeholder {
+                font-family: $sub-font;
+                @include font-family(400, 14px, $grey-color, 20px);
+                letter-spacing: 2.8px;
+                overflow: visible;
+
+                @include media(sm) {
+                    text-align: center;
+                    padding: 0;
+                }
+            }
+        }
+    }
+}
+
+.hero-btn-small {
+    @include media(sm) {
+        right: calc((50% - 70px));
+        top: 100px;
+    }
+}

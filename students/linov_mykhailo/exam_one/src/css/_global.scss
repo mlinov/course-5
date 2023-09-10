@@ -1,0 +1,21 @@
+body {
+    @include font-family(400, 16px, $default-font-color, 28px, $main-font, normal);
+}
+
+@include grid();
+
+.mobile-only {
+    @include media-m(sm) {
+        display: none !important;
+    }
+}
+
+.desktop-only {
+    @include media(sm) {
+        display: none;
+    }
+}
+
+.sprite {
+    display: none;
+}

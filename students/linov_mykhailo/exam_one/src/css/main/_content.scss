@@ -1,0 +1,118 @@
+.spain-one {
+    background-image: url(../../images/spain-1.png);
+    @extend %bg-img-cover-center;
+}
+
+.card {
+    background-color: $grey-card-color;
+    padding: 44px 32px;
+    margin-top: 205px;
+    margin-bottom: 105px;
+
+    @include media (md) {
+        margin-top: 100px;
+        margin-bottom: 50px;
+    }
+
+    @include media (sm) {
+        margin-top: 50px;
+        margin-bottom: 25px;
+    }
+
+    &__header-six {
+        @include font-family(300, 20px);
+        letter-spacing: 2px;
+        margin: 0;
+    }
+
+    &__header-five {
+        @include font-family(400, 20px);
+        margin: 16px 0;
+        text-transform: uppercase;
+    }
+
+    &__text {
+        margin-top: 16px;
+        margin-bottom: 24px;
+        font-weight: 300;
+        letter-spacing: 1.6px;
+    }
+}
+
+.spain-two {
+    background-image: url(../../images/spain-2.png);
+    @extend %bg-img-cover-center;
+
+    .col-6 {
+        margin-left: 50%;
+
+        @include media (md) {
+            margin: 0;
+        }
+
+    }
+}
+
+.tourists {
+    background-image: url(../../images/tourists.png);
+    @extend %bg-img-cover-center;
+}
+
+.tourists-card {
+    margin-bottom: 165px;
+
+    @include media(md) {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.tourists__header {
+    @include font-family(400, 36px, $default-font-color, 40px, $sub-font);
+    margin-top: 105px;
+    margin-bottom: 60px;
+    text-align: center;
+
+    @include media(md) {
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+
+    @include media(sm) {
+        margin-top: 25px;
+        margin-bottom: 15px;
+    }
+}
+
+.tourists-card {
+    display: flex;
+
+
+    &__heading-five {
+        @include font-family(400, 20px);
+        text-transform: uppercase;
+        margin-top: 48px;
+        margin-bottom: 16px;
+    }
+
+    &__text {
+        font-weight: 300;
+        letter-spacing: 1.6px;
+        margin: 0;
+    }
+}
+
+.tourists-card__review-area {
+    padding-left: 60px;
+    padding-right: 60px;
+    background-color: $dark-grey-color;
+
+    @include media (md) {
+        padding-bottom: 30px;
+    }
+
+    svg {
+        padding-bottom: 3px;
+        padding-right: 3px;
+    }
+}

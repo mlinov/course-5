@@ -1,0 +1,31 @@
+.icons {
+    background-color: $dark-grey-color;
+
+    .container {
+        @extend %flex-jst-wrap;
+        max-width: 1100px;
+
+        @include media(sm) {
+            flex-direction: column;
+        }
+    }
+}
+
+.iconbox {
+    padding-top: 95px;
+    padding-bottom: 59px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include media(sm) {
+        padding-top: 45px;
+        padding-bottom: 25px;
+    }
+
+    &__text {
+        @include font-family(400, 36px, $default-font-color, 40px, $sub-font);
+        margin: 0;
+        padding-top: 20px;
+    }
+}

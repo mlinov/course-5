@@ -1,0 +1,59 @@
+.why-choose-us {
+    background-image: url(../../images/whychooseus.png);
+    @extend %bg-img-cover-center;
+
+    .container {
+        padding: 109px 0;
+
+        @media (max-width: 1355px) {
+            padding-left: 15px;
+        }
+
+        @include media (md) {
+            padding: 30px 15px;
+            text-align: center;
+        }
+
+        .btn {
+            margin-left: calc(50% - 106px);
+        }
+    }
+
+    &__header {
+        @include font-family(400, 36px, $default-font-color, 40px, $sub-font);
+        padding-top: 30px;
+    }
+
+
+    &__text {
+        font-weight: 300;
+        letter-spacing: 1.6px;
+        padding-bottom: 7px;
+
+        &:last-of-type {
+            padding-bottom: 15px;
+        }
+    }
+}
+
+.whyus-mountain-top {
+    padding-left: 115px;
+
+    @include media (md) {
+        padding: 0;
+    }
+}
+
+
+.whyus-mountain-bottom {
+    padding-left: 185px;
+    padding-top: 5px;
+
+    @include media (md) {
+        padding-left: 20px;
+    }
+
+    @include media (sm) {
+        padding: 0;
+    }
+}

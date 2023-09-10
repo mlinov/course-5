@@ -1,0 +1,65 @@
+.footer {
+    background-color: $black-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__logo {
+        margin: 0;
+        @include font-family(700, 24px);
+        text-transform: uppercase;
+        padding-top: 80px;
+        padding-bottom: 8px;
+        letter-spacing: 2.4px;
+    }
+
+    &__text {
+        margin: 0;
+        @include font-family(400, 14px, $default-font-color, 20px);
+        letter-spacing: 2.8px;
+    }
+
+    &__social-icons {
+        @extend %ul-not-marker;
+        @extend %flex-jst-wrap;
+        gap: 32px;
+        max-width: 275px;
+        padding-top: 20px;
+        padding-bottom: 80px;
+
+        &_item {}
+    }
+}
+
+.icon-img {
+    fill: $white-color;
+
+    &:hover {
+        fill: $violet-color;
+    }
+}
+
+.fb {
+    width: 20px;
+    height: 32px;
+}
+
+.tw {
+    width: 32px;
+    height: 32px;
+}
+
+.ln {
+    width: 28px;
+    height: 32px;
+}
+
+.yt {
+    width: 36px;
+    height: 32px;
+}
+
+.pt {
+    width: 31px;
+    height: 32px;
+}
