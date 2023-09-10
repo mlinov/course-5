@@ -1,5 +1,5 @@
 .spain-one {
-    background-image: url(../../images/spain-1.png);
+    background-image: url(../images/spain-1.png);
     @extend %bg-img-cover-center;
 }
 
@@ -40,7 +40,7 @@
 }
 
 .spain-two {
-    background-image: url(../../images/spain-2.png);
+    background-image: url(../images/spain-2.png);
     @extend %bg-img-cover-center;
 
     .col-6 {
@@ -54,7 +54,7 @@
 }
 
 .tourists {
-    background-image: url(../../images/tourists.png);
+    background-image: url(../images/tourists.png);
     @extend %bg-img-cover-center;
 }
 
