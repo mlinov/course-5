@@ -2360,9 +2360,8 @@ switch (number) {
 var userRangeStart = Number(prompt("Enter start number of a range", ""));
 var userRangeEnd = Number(prompt("Enter last number of a range", ""));
 var range = 0;
-while (userRangeEnd >= userRangeStart) {
-  range += userRangeStart;
-  userRangeStart++;
+for (var i = userRangeStart; i <= userRangeEnd; i++) {
+  range += i;
 }
 console.log(range);
 
@@ -2370,8 +2369,8 @@ console.log(range);
 
 var firstNum = Number(prompt('Please enter first number', ''));
 var secondNum = Number(prompt('Please enter second number', ''));
-var a = firstNum;
-var b = secondNum;
+var a = Math.max(firstNum, secondNum);
+var b = Math.min((firstNum, secondNum));
 while (b !== 0) {
   var remainder = a % b;
   a = b;
@@ -2383,32 +2382,36 @@ console.log("The greatest common divisor is " + a);
 
 var askNumber = Number(prompt('Please enter a number', ''));
 var aaa = askNumber;
-var dividerArray = [];
 var goingUp = 1;
+console.log('Here are the dividers for your number: ');
 while (aaa >= goingUp) {
   var _remainder = aaa % goingUp;
   if (_remainder === 0) {
-    dividerArray.push(goingUp);
+    console.log(goingUp);
   }
   goingUp++;
 }
-console.log('Here are the dividers for your number: ', dividerArray);
 
 // Норма
 
 // 1. Запитай у користувача п’ятирозрядне число і визначи, чи є воно паліндромом.
 
 var userNumberPalindrome = prompt('Please enter a five-digit number');
-var digit1 = ~~(userNumberPalindrome / 10000);
-var digit2 = ~~(userNumberPalindrome / 1000) % 10;
-var digit3 = ~~(userNumberPalindrome / 100) % 10;
-var digit4 = ~~(userNumberPalindrome / 10) % 10;
-var digit5 = userNumberPalindrome % 10;
-var reversedNumber = digit5 * 10000 + digit4 * 1000 + digit3 * 100 + digit2 * 10 + digit1;
-if (userNumberPalindrome == reversedNumber) {
-  console.log('The number is a palindrome.');
+if (!isNaN(userNumberPalindrome) && userNumberPalindrome.length === 5) {
+  var isPalindrome = true;
+  for (var _i = 0; _i < 2; _i++) {
+    if (userNumberPalindrome[_i] !== userNumberPalindrome[4 - _i]) {
+      isPalindrome = false;
+      break;
+    }
+  }
+  if (isPalindrome) {
+    console.log('The number is a palindrome.');
+  } else {
+    console.log('The number is not a palindrome.');
+  }
 } else {
-  console.log('The number is not a palindrome.');
+  console.log('Invalid input. Please enter a five-digit number.');
 }
 
 // 2. Запитай у користувача суму покупки і виведи суму до оплати зі знижкою:
@@ -2439,9 +2442,12 @@ var negativeNumber = 0;
 var zeroNumber = 0;
 var evenNumber = 0;
 var oddNumber = 0;
-for (var i = 0; i < 10; i++) {
-  var askUser = Number(prompt('Please enter number ' + (i + 1), ''));
-  if (!isNaN(askUser)) {
+for (var _i2 = 0; _i2 < 10; _i2++) {
+  var askUser = Number(prompt('Please enter number ' + (_i2 + 1), ''));
+  if (isNaN(askUser)) {
+    console.log('Invalid input for number ' + (_i2 + 1) + '. Please enter a valid number.');
+    _i2--;
+  } else {
     if (askUser > 0) {
       positiveNumber++;
     } else if (askUser < 0) {
@@ -2454,9 +2460,6 @@ for (var i = 0; i < 10; i++) {
     } else {
       oddNumber++;
     }
-  } else {
-    console.log('Invalid input for number ' + (i + 1) + '. Please enter a valid number.');
-    i--;
   }
 }
 console.log('Positive Numbers: ' + positiveNumber);
@@ -2468,37 +2471,54 @@ console.log('Odd Numbers: ' + oddNumber);
 // 4. Зацикли відображення днів тижня таким чином: «День тижня. Хочеш побачити наступний день? » і так до тих пір, поки користувач натискає OK.
 
 var userConfirm;
-var dayOfTheWeek = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
 var counter = 0;
 do {
-  userConfirm = confirm(dayOfTheWeek[counter % dayOfTheWeek.length] + '. Do you want to see next day?');
-  counter++;
+  var day = void 0;
+  if (counter === 0) {
+    day = 'Monday';
+  } else if (counter === 1) {
+    day = 'Tuesday';
+  } else if (counter === 2) {
+    day = 'Wednesday';
+  } else if (counter === 3) {
+    day = 'Thursday';
+  } else if (counter === 4) {
+    day = 'Friday';
+  } else if (counter === 5) {
+    day = 'Saturday';
+  } else {
+    day = 'Sunday';
+  }
+  userConfirm = confirm(day + '. Do you want to see the next day?');
+  counter = (counter + 1) % 7;
 } while (userConfirm == true);
 
 // Йолка easy
 
 var userHashEasy = Number(prompt('Please enter hash quantity'), '');
-for (var _i = 0; userHashEasy > _i; _i++) {
-  var line = '';
-  for (var j = 0; j <= _i; j++) {
-    line += '#';
+var pyramid = '';
+for (var _i3 = 0; userHashEasy > _i3; _i3++) {
+  for (var j = 0; j <= _i3; j++) {
+    pyramid += '#';
   }
-  console.log(line);
+  pyramid += '\n';
 }
-// 
+console.log(pyramid);
+
 // Йолка normal
 
 var userHashNormal = Number(prompt('Please enter hash quantity'), '');
-for (var _i2 = userHashNormal; _i2 >= 1; _i2--) {
-  var _line = '';
-  for (var _j = 1; _j <= _i2; _j++) {
-    _line += ' ';
+var reversePyramid = '';
+for (var _i4 = 1; _i4 <= userHashNormal; _i4++) {
+  for (var s = 0; s < userHashNormal - _i4; s++) {
+    reversePyramid += ' ';
   }
-  for (var k = _i2; k <= userHashNormal; k++) {
-    _line += '#';
+  for (var _j = 0; _j < _i4; _j++) {
+    reversePyramid += '#';
   }
-  console.log(_line);
+  reversePyramid += '\n';
 }
+console.log(reversePyramid);
 }();
 /******/ })()
 ;

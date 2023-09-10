@@ -1,5 +1,6 @@
 // Мінімум
 
+
 // 1. Запитай у користувача його вік і визначи, ким він є: дитиною (0-11), підлітком (12-17), дорослим (18_59) або пенсіонером (60 ...), передбач можливість введення невірних даних.
 
 const userAge = prompt('Enter your age', '');
@@ -16,6 +17,7 @@ if (age >= 0 && age <= 11) {
 } else {
     console.log('This is incorrect input')
 }
+
 
 // 2. Запитай у користувача число від 0 до 9 і виведи йому спецсимвол, який розташований на цій клавіші (1 !, 2 @, 3 # і т. д).
 
@@ -54,25 +56,27 @@ switch (number) {
         break;
 }
 
+
 // 3. Підрахуй суму всіх чисел в заданому користувачем діапазоні.
 
-let userRangeStart = Number(prompt("Enter start number of a range", ""));
-let userRangeEnd = Number(prompt("Enter last number of a range", ""));
+const userRangeStart = Number(prompt("Enter start number of a range", ""));
+const userRangeEnd = Number(prompt("Enter last number of a range", ""));
 let range = 0;
 
-while (userRangeEnd >= userRangeStart) {
-    range += userRangeStart;
-    userRangeStart++;
+for (var i = userRangeStart; i <= userRangeEnd; i++) {
+    range += i;
 }
+
 console.log(range);
+
 
 // 4. Запитай у користувача 2 числа і знайди найбільший спільний дільник.
 
 const firstNum = Number(prompt('Please enter first number', ''));
 const secondNum = Number(prompt('Please enter second number', ''));
 
-let a = firstNum;
-let b = secondNum;
+let a = Math.max(firstNum, secondNum);
+let b = Math.min((firstNum, secondNum));
 
 while (b !== 0) {
     const remainder = a % b;
@@ -82,41 +86,52 @@ while (b !== 0) {
 
 console.log("The greatest common divisor is " + a);
 
+
 // 5. Запитай у користувача число і виведи всі дільники цього числа.
 
 const askNumber = Number(prompt('Please enter a number', ''));
 
 let aaa = askNumber;
-const dividerArray = [];
 let goingUp = 1;
+
+console.log('Here are the dividers for your number: ');
 
 while (aaa >= goingUp) {
 
     const remainder = aaa % goingUp;
     if (remainder === 0) {
-        dividerArray.push(goingUp);
+        console.log(goingUp);
     }
     goingUp++;
 }
 
-console.log('Here are the dividers for your number: ', dividerArray);
 
 // Норма
+
 
 // 1. Запитай у користувача п’ятирозрядне число і визначи, чи є воно паліндромом.
 
 const userNumberPalindrome = prompt('Please enter a five-digit number');
-const digit1 = ~~(userNumberPalindrome / 10000);
-const digit2 = ~~(userNumberPalindrome / 1000) % 10;
-const digit3 = ~~(userNumberPalindrome / 100) % 10;
-const digit4 = ~~(userNumberPalindrome / 10) % 10;
-const digit5 = userNumberPalindrome % 10;
-const reversedNumber = digit5 * 10000 + digit4 * 1000 + digit3 * 100 + digit2 * 10 + digit1;
-if (userNumberPalindrome == reversedNumber) {
-    console.log('The number is a palindrome.');
+
+if (!isNaN(userNumberPalindrome) && userNumberPalindrome.length === 5) {
+    let isPalindrome = true;
+
+    for (let i = 0; i < 2; i++) {
+        if (userNumberPalindrome[i] !== userNumberPalindrome[4 - i]) {
+            isPalindrome = false;
+            break;
+        }
+    }
+
+    if (isPalindrome) {
+        console.log('The number is a palindrome.');
+    } else {
+        console.log('The number is not a palindrome.');
+    }
 } else {
-    console.log('The number is not a palindrome.');
+    console.log('Invalid input. Please enter a five-digit number.');
 }
+
 
 // 2. Запитай у користувача суму покупки і виведи суму до оплати зі знижкою:
 // 2.a від 200 до 300 - знижка буде 3%;
@@ -143,6 +158,7 @@ let userPrice = Number(userAmount * (1 - userDiscount)).toFixed(2);
 
 console.log('Your final price is ' + userPrice);
 
+
 // 3. Запитай у користувача 10 чисел і порахуй, скільки він ввів додатніх, від’ємних і нулів. При цьому також порахуй, скільки з них парних і непарних. Виведи статистику на екран. Враховуй, що достатньо однієї змінної (не 10) для введення чисел користувачем.
 
 let positiveNumber = 0;
@@ -151,11 +167,14 @@ let zeroNumber = 0;
 let evenNumber = 0;
 let oddNumber = 0;
 
-
 for (let i = 0; i < 10; i++) {
     const askUser = Number(prompt('Please enter number ' + (i + 1), ''));
 
-    if (!isNaN(askUser)) {
+    if (isNaN(askUser)) {
+        console.log('Invalid input for number ' + (i + 1) + '. Please enter a valid number.')
+        i--;
+
+    } else {
         if (askUser > 0) {
             positiveNumber++;
         } else if (askUser < 0) {
@@ -169,9 +188,6 @@ for (let i = 0; i < 10; i++) {
         } else {
             oddNumber++;
         }
-    } else {
-        console.log('Invalid input for number ' + (i + 1) + '. Please enter a valid number.')
-        i--;
     }
 }
 console.log('Positive Numbers: ' + positiveNumber);
@@ -180,44 +196,66 @@ console.log('Zero Numbers: ' + zeroNumber);
 console.log('Even Numbers: ' + evenNumber);
 console.log('Odd Numbers: ' + oddNumber);
 
+
 // 4. Зацикли відображення днів тижня таким чином: «День тижня. Хочеш побачити наступний день? » і так до тих пір, поки користувач натискає OK.
 
 let userConfirm;
-
-const dayOfTheWeek = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
 let counter = 0;
 do {
-    userConfirm = confirm(dayOfTheWeek[counter % dayOfTheWeek.length] + '. Do you want to see next day?');
-    counter++;
+    let day;
+    if (counter === 0) {
+        day = 'Monday';
+    } else if (counter === 1) {
+        day = 'Tuesday';
+    } else if (counter === 2) {
+        day = 'Wednesday';
+    } else if (counter === 3) {
+        day = 'Thursday';
+    } else if (counter === 4) {
+        day = 'Friday';
+    } else if (counter === 5) {
+        day = 'Saturday';
+    } else {
+        day = 'Sunday';
+    }
+
+    userConfirm = confirm(day + '. Do you want to see the next day?');
+    counter = (counter + 1) % 7;
 } while (userConfirm == true);
+
 
 // Йолка easy
 
 const userHashEasy = Number(prompt('Please enter hash quantity'), '');
-
+let pyramid = '';
 for (let i = 0; userHashEasy > i; i++) {
-    let line = '';
 
     for (let j = 0; j <= i; j++) {
-        line += '#';
+        pyramid += '#';
     }
-
-    console.log(line);
+    pyramid += '\n';
 }
-// 
+
+console.log(pyramid);
+
+
 // Йолка normal
 
 const userHashNormal = Number(prompt('Please enter hash quantity'), '');
 
-for (let i = userHashNormal; i >= 1; i--) {
-    let line = '';
+let reversePyramid = '';
 
-    for (let j = 1; j <= i; j++) {
-        line += ' ';
-    }
-    for (let k = i; k <= userHashNormal; k++) {
-        line += '#';
+for (let i = 1; i <= userHashNormal; i++) {
+
+    for (let s = 0; s < userHashNormal - i; s++) {
+        reversePyramid += ' ';
     }
 
-    console.log(line);
+    for (let j = 0; j < i; j++) {
+        reversePyramid += '#';
+    }
+
+    reversePyramid += '\n';
 }
+
+console.log(reversePyramid);
