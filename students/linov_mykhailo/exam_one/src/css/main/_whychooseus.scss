@@ -15,7 +15,9 @@
         }
 
         .btn {
-            margin-left: calc(50% - 106px);
+            @include media (md) {
+                margin-left: calc(50% - 106px);
+            }
         }
     }
 
